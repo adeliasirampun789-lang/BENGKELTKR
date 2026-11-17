@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel TKR - Teknik Kendaraan Ringan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #222;
+        }
+
+        header {
+            background: #101820;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #ffb703;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #ffb703;
+        }
+
+        .hero {
+            background: linear-gradient(
+                rgba(0,0,0,.7),
+                rgba(0,0,0,.7)
+            ), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #ffb703;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #ffb703;
+            color: #101820;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .judul h2 {
+            color: #101820;
+            font-size: 30px;
+        }
+
+        .tentang {
+            text-align: center;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .layanan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,.1);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #e09b00;
+        }
+
+        .fasilitas {
+            background: #101820;
+            color: white;
+        }
+
+        .fasilitas .judul h2 {
+            color: white;
+        }
+
+        .kontak {
+            text-align: center;
+            line-height: 2;
+        }
+
+        footer {
+            background: #101820;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>🔧 BENGKEL TKR</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Selamat Datang di <span>Bengkel TKR</span></h1>
+        <p>Tempat Belajar, Praktik, dan Merawat Kendaraan Ringan</p>
+        <a href="#layanan" class="btn">Lihat Layanan</a>
+    </div>
+</section>
+
+<section id="tentang">
+    <div class="judul">
+        <h2>Tentang Bengkel TKR</h2>
+    </div>
+
+    <div class="tentang">
+        <p>
+            Bengkel TKR (Teknik Kendaraan Ringan) merupakan tempat
+            pembelajaran dan praktik dalam bidang otomotif.
+            Di sini siswa mempelajari cara merawat, memperbaiki,
+            dan mendiagnosis kerusakan kendaraan ringan.
+            Kami mengutamakan keselamatan kerja, kedisiplinan,
+            dan keterampilan dalam dunia otomotif.
+        </p>
+    </div>
+</section>
+
+<section id="layanan">
+    <div class="judul">
+        <h2>Layanan Bengkel</h2>
+        <p>Berbagai kegiatan praktik otomotif</p>
+    </div>
+
+    <div class="layanan">
+
+        <div class="card">
+            <div class="icon">🔧</div>
+            <h3>Servis Mesin</h3>
+            <p>Pemeriksaan dan perawatan mesin kendaraan.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛞</div>
+            <h3>Sistem Rem</h3>
+            <p>Pemeriksaan dan perbaikan sistem pengereman.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔋</div>
+            <h3>Sistem Kelistrikan</h3>
+            <p>Perawatan aki, lampu, dan sistem kelistrikan mobil.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>Sistem Transmisi</h3>
+            <p>Pembelajaran dan pemeriksaan sistem pemindah tenaga.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="fasilitas" id="fasilitas">
+    <div class="judul">
+        <h2>Fasilitas Bengkel</h2>
+    </div>
+
+    <div class="layanan">
+
+        <div class="card">
+            <div class="icon">🧰</div>
+            <h3>Tool Box</h3>
+            <p>Peralatan untuk kegiatan praktik otomotif.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚗</div>
+            <h3>Mobil Praktik</h3>
+            <p>Kendaraan sebagai media pembelajaran siswa.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔩</div>
+            <h3>Alat Ukur</h3>
+            <p>Peralatan pengukuran komponen kendaraan.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="kontak">
+    <div class="judul">
+        <h2>Hubungi Kami</h2>
+    </div>
+
+    <div class="kontak">
+        <p>📍 Alamat: Isi alamat sekolah atau bengkel</p>
+        <p>📞 Telepon: 08xxxxxxxxxx</p>
+        <p>📧 Email: bengkeltkr@gmail.com</p>
+        <p>🕒 Jam Operasional: Senin - Jumat</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Bengkel TKR | Teknik Kendaraan Ringan</p>
+    <p>Belajar Otomotif, Membangun Masa Depan.</p>
+</footer>
+
+</body>
+</html>
